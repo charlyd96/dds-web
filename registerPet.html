@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body class = "bg-light">
-    <div class="container-fluid">
+    <div class="container-fluid animated fadeIn fast">
         <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html"><img width="65" height="35" class="rounded-pill" src = "https://w7.pngwing.com/pngs/3/916/png-transparent-gin-k%E1%BA%BF-ho%E1%BA%A1ch-user-interface-dog-footprints-logo-auto-part-symbol.png"></a>
@@ -24,11 +24,11 @@
                             Mascotas
                             </a>
                             <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Registrar mascota</a>
-                            <a class="dropdown-item" href="#">Adoptar mascota</a>
-                            <a class="dropdown-item" href="#">Dar en adopción una mascota</a>
-                            <a class="dropdown-item" href="#">Buscar una mascota perdida</a>
-                            <a class="dropdown-item" href="#">Publicar una mascota perdida</a>
+                                <a class="dropdown-item" href="registerPet.html">Registrar mascota</a>
+                                <a class="dropdown-item" href="#">Adoptar mascota</a>
+                                <a class="dropdown-item" href="#">Dar en adopción una mascota</a>
+                                <a class="dropdown-item" href="#">Buscar una mascota perdida</a>
+                                <a class="dropdown-item" href="petFound.html">Publicar una mascota perdida</a>
                             </div>
                         </li>
                         <a class="nav-item nav-link  col-4" href="#">Iniciar sesión</a>
@@ -39,12 +39,14 @@
             </div>
         </nav>
     </header>
-        <h1 class="ml-4 mt-4">Registrar mascota</h1>
-        <p class="mt ml-4 text-secondary">Para poder registrar a tu mascota en la plataforma, vamos a pedirte algunos datos
+
+    <section class="m-4">
+        <h1>Registrar mascota</h1>
+        <p class="text-secondary">Para poder registrar a tu mascota en la plataforma, vamos a pedirte algunos datos
                                           sobre el dueño y luego sobre la mascota</p>
         
-        <hr>
-        <form class="m-4">
+        <hr class="hr-bold">
+        <form>
             <h2 class="mt-2 text-dark">Datos sobre el dueño</h2>
             <div class="form-row mt-4" >
                 <div class="form-group col-md-2">
@@ -91,7 +93,7 @@
                 </div>
             </div>
 
-            <hr>
+            <hr class="hr-bold">
 
             <h2 class="mt-2 text-dark">Datos sobre la mascota</h2>
             <div class="form-row mt-4" >
@@ -155,6 +157,7 @@
                 <button type="submit" class="btn btn-secondary mt-5" style="margin-left: 7rem;">Crear mascota</button> 
             </div>
         </form>
+    </section>
 </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
